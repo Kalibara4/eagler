@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Eaglercraft</title>
+<title>eagler</title>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="description" content="Eaglercraft is real Minecraft 1.5.2 that you can play in any regular web browser. That includes school chromebooks, it works on all chromebooks. It supports both singleplayer and multiplayer with no extensions." />
@@ -24,7 +24,9 @@ const relayId = Math.floor(Math.random() * 3);
 window.eaglercraftOpts = {
 container: "game_frame", assetsURI: "assets.epk", serverWorkerURI: "worker_bootstrap.js", worldsFolder: "MAIN",
 servers: [
-	{ serverName: "Use a 1.8.8 client for better Multiplayer access", serverAddress: "because most servers have moved over to 1.8.8", hideAddress: false }
+	{ addr: "wss://mc.lampnetwork.xyz", name: "LampLifesteal" },
+	{ addr: "wss://mc.lamplifesteal.xyz", name: "LampLifesteal" },
+	{ addr: "wss://temp.junkbustersofupstate.com", name: "LampLifesteal"}
 ],
 relays: [
 	{ addr: "wss://relay.deev.is/", name: "lax1dude relay #1", primary: relayId == 0 },
